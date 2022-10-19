@@ -3,8 +3,8 @@ import { screen } from '@testing-library/react';
 import { About } from '../pages';
 import renderWithRouter from './renderWithRouter';
 
-describe('Teste o componente About', () => {
-  test('Teste se a página contém as informações sobre a Pokédex;', () => {
+describe('Testa o componente About', () => {
+  test('Testa se a página contém as informações sobre a Pokédex;', () => {
     renderWithRouter(<About />);
     const information = screen.getByText(/This application simulates a Pokédex/i);
     expect(information).toBeInTheDocument();
